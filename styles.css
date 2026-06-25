@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.direction-keys {
+  display: grid;
+}
+
+.arrow-key {
+  padding: 15px;
+}
