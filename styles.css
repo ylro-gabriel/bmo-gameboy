@@ -5,9 +5,80 @@
 }
 
 .direction-keys {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
   display: grid;
+  grid-template-areas:
+    "up-left up up-right"
+    "left mid right"
+    "down-left down down-right";
 }
 
 .arrow-key {
-  padding: 15px;
+  background-color: yellow;
+}
+
+.mid {
+  grid-area: mid;
+  background-color: yellow;
+}
+
+#btn-up {
+  grid-area: up;
+}
+
+#btn-down {
+  grid-area: down;
+}
+
+#btn-left {
+  grid-area: left;
+}
+
+#btn-right {
+  grid-area: right;
+}
+
+.start-select {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.btn-control {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: red;
+}
+
+#btn-kick {
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+  background: cyan;
+}
+
+#btn-kick:hover {
+  background: rgb(1, 233, 233);
+  transition: all 0.3s;
+}
+
+#btn-punch {
+  border-radius: 50%;
+  background: greenyellow;
+}
+
+#btn-punch:hover {
+  background: rgb(157, 234, 42);
+  transition: all 0.3s;
+}
+
+#btn-jump {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+#btn-jump:hover {
+  background-color: rgb(231, 3, 3);
+  transition: all 0.3s;
 }
