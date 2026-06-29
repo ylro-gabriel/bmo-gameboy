@@ -4,10 +4,17 @@
   margin: 0;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .direction-keys {
   height: 100px;
   width: 100px;
-  border: 1px solid black;
+
   display: grid;
   grid-template-areas:
     "up-left up up-right"
@@ -17,6 +24,15 @@
 
 .arrow-key {
   background-color: yellow;
+  border: none;
+}
+
+.arrow-key:hover {
+  background-color: rgb(248, 244, 7);
+}
+
+.arrow-key:active {
+  background-color: rgb(238, 238, 2);
 }
 
 .mid {
@@ -26,18 +42,26 @@
 
 #btn-up {
   grid-area: up;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #btn-down {
   grid-area: down;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #btn-left {
   grid-area: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #btn-right {
   grid-area: right;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .start-select {
@@ -50,6 +74,24 @@
   width: 40px;
   border: none;
   background-color: red;
+}
+
+.gameboy-container {
+  background-color: rgb(3, 205, 148);
+  width: 300px;
+  height: 440px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gameboy-screen {
+  background-color: greenyellow;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
 }
 
 #btn-kick {

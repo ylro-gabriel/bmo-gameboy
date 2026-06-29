@@ -7,25 +7,46 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="direction-keys">
-      <button class="arrow-key" id="btn-up" onclick="btnUp()"></button>
-      <button class="arrow-key" id="btn-down" onclick="btnDown()"></button>
-      <button class="arrow-key" id="btn-right" onclick="btnRight()"></button>
-      <button class="arrow-key" id="btn-left" onclick="btnLeft()"></button>
-      <div class="mid"></div>
-    </div>
-    <div class="start-select-container">
-      <button class="start-select" id="btn-select" onclick="btnSelect()">
-        Select
-      </button>
-      <button class="start-select" id="btn-start" onclick="btnStart()">
-        Start
-      </button>
-    </div>
-    <div class="control-btn-container">
-      <button class="btn-control" id="btn-kick" onclick="btnKick()"></button>
-      <button class="btn-control" id="btn-punch" onclick="btnPunch()"></button>
-      <button class="btn-control" id="btn-jump" onclick="btnJump()"></button>
+    <div class="gameboy-container">
+      <div class="gameboy-screen"></div>
+      <div class="gameboy-controls">
+        <div class="direction-keys">
+          <button class="arrow-key" id="btn-up" onclick="btnUp()"></button>
+          <button class="arrow-key" id="btn-down" onclick="btnDown()"></button>
+          <button
+            class="arrow-key"
+            id="btn-right"
+            onclick="btnRight()"
+          ></button>
+          <button class="arrow-key" id="btn-left" onclick="btnLeft()"></button>
+          <div class="mid"></div>
+        </div>
+        <div class="start-select-container">
+          <button class="start-select" id="btn-select" onclick="btnSelect()">
+            Select
+          </button>
+          <button class="start-select" id="btn-start" onclick="btnStart()">
+            Start
+          </button>
+        </div>
+        <div class="control-btn-container">
+          <button
+            class="btn-control"
+            id="btn-kick"
+            onclick="btnKick()"
+          ></button>
+          <button
+            class="btn-control"
+            id="btn-punch"
+            onclick="btnPunch()"
+          ></button>
+          <button
+            class="btn-control"
+            id="btn-jump"
+            onclick="btnJump()"
+          ></button>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
