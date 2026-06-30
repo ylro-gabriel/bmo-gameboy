@@ -14,7 +14,6 @@ body {
 .direction-keys {
   height: 100px;
   width: 100px;
-
   display: grid;
   grid-template-areas:
     "up-left up up-right"
@@ -69,6 +68,11 @@ body {
   border-radius: 10px;
 }
 
+.start-select-container {
+  border: 1px solid red;
+  grid-column: 1 / span;
+}
+
 .btn-control {
   height: 40px;
   width: 40px;
@@ -93,12 +97,16 @@ body {
   height: 200px;
   border-radius: 10px;
 }
+.control-btn-container {
+  border: 1px solid red;
+}
 
 .gameboy-controls {
   height: 200px;
-  width: 200px;
+  width: 250px;
   display: grid;
-  grid-template-areas:;
+  border: 1px solid red;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .gameboy-indicators {
